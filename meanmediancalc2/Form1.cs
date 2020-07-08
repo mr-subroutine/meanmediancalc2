@@ -16,5 +16,18 @@ namespace meanmediancalc2
         {
             InitializeComponent();
         }
+
+        List<int> enteredValues = new List<int>();
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btn_mean.Enabled = false;
+            btn_median.Enabled = false;
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

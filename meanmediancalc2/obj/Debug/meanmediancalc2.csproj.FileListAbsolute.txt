@@ -1,0 +1,10 @@
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\bin\Debug\meanmediancalc2.exe.config
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\bin\Debug\meanmediancalc2.exe
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\bin\Debug\meanmediancalc2.pdb
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.csprojAssemblyReference.cache
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.Form1.resources
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.Properties.Resources.resources
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.csproj.GenerateResource.cache
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.csproj.CoreCompileInputs.cache
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.exe
+C:\Users\gamef\source\repos\meanmediancalc2\meanmediancalc2\obj\Debug\meanmediancalc2.pdb
