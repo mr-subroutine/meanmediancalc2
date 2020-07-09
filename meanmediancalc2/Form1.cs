@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -154,6 +155,49 @@ namespace meanmediancalc2
 
                 MessageBox.Show("The median is: " + median);
                 return;
+            }
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            string startUpPath = Application.StartupPath;
+            string location = startUpPath + @"\save.txt";
+
+            string[] enterValuesArr = new string[enteredValues.Count];
+
+            for (int i = 0; i < enteredValues.Count; i++)
+            {
+                enterValuesArr[i] = enteredValues[i].ToString();
+            }
+
+            System.IO.File.WriteAllLines(@location, enterValuesArr);
+
+            // checks to see if file was created
+            if (File.Exists(location))
+            {
+                MessageBox.Show("Text File Created!");
+            }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            string startUpPath = Application.StartupPath;
+            string location = startUpPath + @"\save.txt";
+
+            if (!File.Exists(location))
+            {
+                MessageBox.Show("No File Found.");
+                return;
+            }
+
+            if (File.Exists(location))
+            {
+                File.Delete(location);
+
+                if (!File.Exists(location))
+                {
+                    MessageBox.Show("Text File Deleted!");
+                }
             }
         }
     }

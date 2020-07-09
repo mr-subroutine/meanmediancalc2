@@ -34,8 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_load = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_mean
@@ -95,31 +96,43 @@
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Location = new System.Drawing.Point(382, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Save to File";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Location = new System.Drawing.Point(382, 41);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(90, 23);
+            this.btn_save.TabIndex = 7;
+            this.btn_save.Text = "Save to File";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // button2
+            // btn_load
             // 
-            this.button2.Location = new System.Drawing.Point(382, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Load File";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_load.Location = new System.Drawing.Point(382, 12);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(90, 23);
+            this.btn_load.TabIndex = 8;
+            this.btn_load.Text = "Load File";
+            this.btn_load.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.Location = new System.Drawing.Point(382, 70);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(90, 23);
+            this.btn_delete.TabIndex = 9;
+            this.btn_delete.Text = "Delete File";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 320);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_load);
+            this.Controls.Add(this.btn_save);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.label1);
@@ -143,8 +156,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_load;
+        private System.Windows.Forms.Button btn_delete;
     }
 }
 
