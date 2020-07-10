@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Deployment.Application;
 
 namespace meanmediancalc2
 {
@@ -204,9 +205,14 @@ namespace meanmediancalc2
 
         private void btn_load_Click(object sender, EventArgs e)
         {
+            loadFile();
+        }
+
+        private void loadFile()
+        {
             string startUpPath = Application.StartupPath;
             string location = startUpPath + @"\save.txt";
-            richTextBox1.Clear();
+            //List<string> readValues = new List<string>();
 
             if (!File.Exists(location))
             {
@@ -214,14 +220,18 @@ namespace meanmediancalc2
                 return;
             }
 
-            if (File.Exists(location))
+            else if (File.Exists(location))
             {
-                // read from text file
+                richTextBox1.Clear();
 
+                string[] lines = File.ReadAllLines(location);
 
-                // display in list
+                foreach (string line in lines)
+                {
+                    richTextBox1.Text += line;
+                    richTextBox1.Text += Environment.NewLine;
+                }
             }
-
         }
     }
 }
