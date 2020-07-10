@@ -163,6 +163,7 @@ namespace meanmediancalc2
             string startUpPath = Application.StartupPath;
             string location = startUpPath + @"\save.txt";
 
+            // sets size of array to size of list and copies for system.io writeline
             string[] enterValuesArr = new string[enteredValues.Count];
 
             for (int i = 0; i < enteredValues.Count; i++)
@@ -199,6 +200,28 @@ namespace meanmediancalc2
                     MessageBox.Show("Text File Deleted!");
                 }
             }
+        }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            string startUpPath = Application.StartupPath;
+            string location = startUpPath + @"\save.txt";
+            richTextBox1.Clear();
+
+            if (!File.Exists(location))
+            {
+                MessageBox.Show("No File Found.");
+                return;
+            }
+
+            if (File.Exists(location))
+            {
+                // read from text file
+
+
+                // display in list
+            }
+
         }
     }
 }
